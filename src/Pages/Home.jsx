@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Components/Banner';
 import AboutUs from './AboutUs';
 import Team from './Team';
+import Foundation from './Foundation';
 
 const Home = () => {
     return (
@@ -14,6 +15,9 @@ const Home = () => {
             </div>
             <div className='mt-14'>
                 <Team></Team>
+            </div>
+            <div className='mt-14'>
+                <Foundation></Foundation>
             </div>
         </div>
     );

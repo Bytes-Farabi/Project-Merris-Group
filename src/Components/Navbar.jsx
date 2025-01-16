@@ -27,7 +27,7 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <Link to="/projects">Projects</Link>
+                            <Link to="/foundation">Foundation</Link>
                             <Link to="/team">Our Team</Link>
                             <Link to="/aboutus">About Us</Link>
                         </ul>
@@ -45,19 +45,19 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 lg:flex lg:gap-5"><NavLink to={"/"} className={({ isActive }) =>
                         `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
                     }>Home</NavLink>
-                        <NavLink to={"/projects"} className={({ isActive }) =>
+                        <NavLink to={"/foundation"} className={({ isActive }) =>
                             `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
-                        }>Projects</NavLink>
-                        
+                        }>Foundation</NavLink>
+
                         <NavLink to={"/aboutus"} className={({ isActive }) =>
                             `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover: focus:outline-none focus:ring-2 focus:ring-emerald-500  focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
                         }>About Us</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <NavLink to={"/team"} className={({ isActive }) =>
-                            `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
-                        }>Our Team</NavLink>
+                    <NavLink to={"/team"} className={({ isActive }) =>
+                        `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
+                    }>Our Team</NavLink>
                 </div>
             </div>
         </div>
