@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from "../../public/assets/logo.svg"
+import logo2 from "../../public/assets/logo_Simple.svg"
+import logo3 from "../../public/assets/merris-logo-1.svg"
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -31,30 +33,31 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='flex items-center gap-5'>
-                        <img src={logo} alt="logo" className='w-12 h-12 object-contain' />
-                        <h1 className='text-3xl flex gap-2'>
+                        {/* <img src={logo} alt="logo" className='w-12 h-12 object-contain' /> */}
+                        <img src={logo3} alt="logo" className='w-36  object-contain' />
+                        {/* <h1 className='text-3xl flex gap-2'>
                             <span className='font-pacifico'>Merris</span>
                             <span className='font-pacifico'>Group</span>
-                        </h1>
+                        </h1> */}
                     </div>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1"><NavLink to={"/"} className={({ isActive }) =>
-                        `px-6 py-2  rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
+                <div className="navbar-center hidden lg:flex lg:gap-28">
+                    <ul className="menu menu-horizontal px-1 lg:flex lg:gap-5"><NavLink to={"/"} className={({ isActive }) =>
+                        `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
                     }>Home</NavLink>
                         <NavLink to={"/projects"} className={({ isActive }) =>
-                            `px-6 py-2  rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
+                            `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
                         }>Projects</NavLink>
-                        <NavLink to={"/team"} className={({ isActive }) =>
-                            `px-6 py-2  rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
-                        }>Our Team</NavLink>
+                        
                         <NavLink to={"/aboutus"} className={({ isActive }) =>
-                            `px-6 py-2  rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500  focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
+                            `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover: focus:outline-none focus:ring-2 focus:ring-emerald-500  focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
                         }>About Us</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <NavLink to={"/team"} className={({ isActive }) =>
+                            `px-6 py-2 text-white rounded-lg shadow-md font-medium transition duration-200 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 ${isActive ? 'scale-95 bg-[#0B9D58]' : 'bg-gray-900 text-white'}`
+                        }>Our Team</NavLink>
                 </div>
             </div>
         </div>
