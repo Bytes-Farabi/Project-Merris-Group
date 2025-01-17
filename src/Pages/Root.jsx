@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import logo from "../../public/assets/merris-logo-1.svg"
+import logo from "../../public/assets/merris-logo-1.svg";
 
 const Root = () => {
   const handleScrollToSection = (id) => {
@@ -13,37 +13,36 @@ const Root = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="bg-green-700 text-white py-4 shadow-md sticky top-0 z-50">
+      <nav className="bg-gradient-to-r from-blue-100 via-white to-blue-100 text-gray-700 py-4 shadow-lg sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center px-4 lg:px-8">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            {/* <span className="text-yellow-400">Merris</span> Foundation */}
-            <img src={logo} alt="" className="w-36 object-contain"/>
+            <img src={logo} alt="Merris Logo" className="w-36 object-contain" />
           </div>
 
           {/* Menu Items */}
           <div className="hidden md:flex space-x-6">
             <button
               onClick={() => handleScrollToSection("aboutus")}
-              className="px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+              className="px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
             >
               About Us
             </button>
             <button
               onClick={() => handleScrollToSection("foundation")}
-              className="px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+              className="px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
             >
               Foundation
             </button>
             <button
               onClick={() => handleScrollToSection("projects")}
-              className="px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+              className="px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
             >
               Projects
             </button>
             <button
               onClick={() => handleScrollToSection("team")}
-              className="px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+              className="px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
             >
               Team
             </button>
@@ -57,7 +56,7 @@ const Root = () => {
                   .getElementById("mobile-menu")
                   .classList.toggle("hidden")
               }
-              className="text-white focus:outline-none"
+              className="text-gray-700 focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,29 +79,29 @@ const Root = () => {
         {/* Mobile Menu */}
         <div
           id="mobile-menu"
-          className="md:hidden hidden bg-green-800 text-white flex flex-col items-center space-y-4 py-4"
+          className="md:hidden hidden bg-gradient-to-r from-blue-100 via-white to-blue-100 text-gray-700 flex flex-col items-center space-y-4 py-4"
         >
           <button
             onClick={() => handleScrollToSection("aboutus")}
-            className="w-full text-center px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+            className="w-full text-center px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
           >
             About Us
           </button>
           <button
             onClick={() => handleScrollToSection("foundation")}
-            className="w-full text-center px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+            className="w-full text-center px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
           >
             Foundation
           </button>
           <button
             onClick={() => handleScrollToSection("projects")}
-            className="w-full text-center px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+            className="w-full text-center px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
           >
             Projects
           </button>
           <button
             onClick={() => handleScrollToSection("team")}
-            className="w-full text-center px-4 py-2 rounded hover:bg-green-600 hover:text-yellow-300 transition duration-200"
+            className="w-full text-center px-4 py-2 rounded hover:bg-blue-200 hover:text-gray-900 transition duration-200"
           >
             Team
           </button>
