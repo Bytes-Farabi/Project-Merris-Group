@@ -2,47 +2,52 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative bg-gradient-to-br from-[#1E293B] via-[#3B82F6] to-[#9333EA] text-white h-96 flex items-center justify-center overflow-hidden">
-      {/* Background Decorations */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 w-96 h-96 rounded-full bg-[#ffffff33] blur-3xl opacity-20"></div>
-        <div className="absolute bottom-20 right-20 w-[500px] h-[500px] rounded-full bg-[#ffffff33] blur-3xl opacity-20"></div>
-      </div>
-
-      {/* Animated Floating Shapes */}
-      <div className="absolute top-16 right-28 animate-bounce-slow">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          className="w-32 h-32 fill-[#ffffff55]"
-        >
-          <path d="M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm6 12a6 6 0 11-6-6 6.006 6.006 0 016 6z" />
-        </svg>
-      </div>
-
-      {/* Banner Content */}
-      <div className="relative text-center max-w-4xl px-6">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-wide leading-tight animate-fade-in">
-          Welcome to Our Future
+    <div className="relative bg-gradient-to-r from-blue-100 via-white to-blue-100 text-gray-700 py-20">
+      {/* Centered Content */}
+      <div className="container mx-auto px-4 text-center">
+        {/* Headline */}
+        <h1 className="text-4xl md:text-5xl font-bold leading-snug">
+          Welcome to Merris Group
         </h1>
-        <p className="mt-6 text-lg md:text-2xl leading-relaxed animate-fade-in delay-500">
-          Together, we’re building the foundation for a brighter tomorrow, driven
-          by collaboration, innovation, and meaningful change.
+
+        {/* Subheading */}
+        <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+        Empowering people and ideas to shape a sustainable and innovative
+          future through collaboration, creativity, and a commitment to
+          excellence.
         </p>
-        <div className="mt-8 flex justify-center gap-4">
-          <a
-            href="#about"
-            className="bg-[#FACC15] text-[#1E293B] font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 hover:bg-[#F59E0B]"
+
+        {/* Call-to-Action Buttons */}
+        <div className="mt-6 flex justify-center gap-4">
+          <button
+            onClick={() => document.getElementById("aboutus").scrollIntoView({ behavior: "smooth" })}
+            className="px-6 py-3 rounded-lg bg-blue-500 text-white font-semibold shadow hover:bg-blue-600 transition duration-200"
           >
-            Get Started
-          </a>
-          <a
-            href="#contact"
-            className="bg-white text-[#3B82F6] font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 hover:bg-[#1E293B] hover:text-white"
+            Learn More
+          </button>
+          <button
+            onClick={() => document.getElementById("team").scrollIntoView({ behavior: "smooth" })}
+            className="px-6 py-3 rounded-lg bg-gray-200 text-gray-700 font-semibold shadow hover:bg-gray-300 transition duration-200"
           >
-            Contact Us
-          </a>
+            Meet Exceptional Minds
+          </button>
         </div>
+      </div>
+
+      {/* Decorative Waves */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg
+          className="relative block w-full h-16"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+        >
+          <path
+            d="M0,96L1200,48L1200,120L0,120Z"
+            fill="#f8fafc"
+            className="fill-current"
+          ></path>
+        </svg>
       </div>
     </div>
   );
