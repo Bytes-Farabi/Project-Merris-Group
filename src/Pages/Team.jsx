@@ -4,10 +4,10 @@ import { FaSquareTwitter } from "react-icons/fa6";
 
 const teamMembers = [
   {
-    name: "John Doe",
-    designation: "Founder & CEO",
+    name: "Rumon Rana",
+    designation: "Chairperson and Head of Design",
     brief: "Passionate about innovation, leadership, and building impactful solutions.",
-    image: "https://i.ibb.co.com/3Rm835T/minha.jpg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/8bwMFCg/Screenshot-1.png", // Replace with actual image URL
     social: {
       linkedin: "https://linkedin.com/in/johndoe",
       twitter: "https://twitter.com/johndoe",
@@ -15,8 +15,8 @@ const teamMembers = [
     },
   },
   {
-    name: "Jane Smith",
-    designation: "Chief Technology Officer",
+    name: "M. Farabi",
+    designation: "MD and CTO",
     brief: "Loves coding, exploring new technologies, and mentoring others.",
     image: "https://i.ibb.co.com/qFZsvzf/Farabi.png", // Replace with actual image URL
     social: {
@@ -26,10 +26,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Alice Brown",
-    designation: "Head of Design",
+    name: "Saifur Rahman",
+    designation: "COO",
     brief: "Driven by creativity and the art of crafting stunning user experiences.",
-    image: "https://i.ibb.co.com/3Rm835T/minha.jpg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/8bwMFCg/Screenshot-1.png", // Replace with actual image URL
     social: {
       linkedin: "https://linkedin.com/in/alicebrown",
       twitter: "https://twitter.com/alicebrown",
@@ -37,10 +37,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Alice Brown",
-    designation: "Head of Design",
+    name: "Oliur R. Shawon",
+    designation: "CFO and Head of Development",
     brief: "Driven by creativity and the art of crafting stunning user experiences.",
-    image: "https://i.ibb.co.com/3Rm835T/minha.jpg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/8bwMFCg/Screenshot-1.png", // Replace with actual image URL
     social: {
       linkedin: "https://linkedin.com/in/alicebrown",
       twitter: "https://twitter.com/alicebrown",
@@ -48,10 +48,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Alice Brown",
-    designation: "Head of Design",
+    name: "Monir Hussain",
+    designation: "Head of Social Initiatives",
     brief: "Driven by creativity and the art of crafting stunning user experiences.",
-    image: "https://i.ibb.co.com/3Rm835T/minha.jpg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/8bwMFCg/Screenshot-1.png", // Replace with actual image URL
     social: {
       linkedin: "https://linkedin.com/in/alicebrown",
       twitter: "https://twitter.com/alicebrown",
@@ -59,10 +59,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Alice Brown",
-    designation: "Head of Design",
+    name: "Romjan Ahmed",
+    designation: "CMO",
     brief: "Driven by creativity and the art of crafting stunning user experiences.",
-    image: "https://i.ibb.co.com/3Rm835T/minha.jpg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/8bwMFCg/Screenshot-1.png", // Replace with actual image URL
     social: {
       linkedin: "https://linkedin.com/in/alicebrown",
       twitter: "https://twitter.com/alicebrown",

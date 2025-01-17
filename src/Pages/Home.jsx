@@ -28,7 +28,7 @@ const Home = () => {
       </section> */}
 
       {/* Team Section */}
-      <section id="team" className="py-16 bg-gray-100">
+      <section id="team" className="py-16 bg-gray-100 mt-14">
         <Team />
       </section>
       <Footer></Footer>
